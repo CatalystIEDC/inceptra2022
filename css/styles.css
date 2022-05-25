@@ -1,6 +1,14 @@
 body{
     font-family: "Montserrat";
 }
+html{
+    scroll-snap-type: mandatory;
+    scroll-snap-points-y: repeat(100vh);
+    scroll-snap-type: y mandatory;
+}
+section{
+    scroll-snap-align: start;
+}
 #title{
     background-color: #8749FA;
     background: url("/images/Desktop.png"); 
@@ -91,13 +99,14 @@ p{
     padding: 5%;
 }
 #testimonials{
+    height:80vh;
     padding: 7% 15%;
     text-align: center;
     background-color: #FBC052;
     color: #fff;
 }
 .testimonial-image{
-    width: 10%;
+    /* width: 10%; */
     border-radius: 100%;
     margin: 20px;
 }
@@ -135,8 +144,12 @@ p{
 }
 .social{
     margin: 20px 10px 10px;
+    display:flex;
+    justify-content: center;
 }
 .logo{
+    padding-bottom: 20px;
+    padding-top: 20px;
     padding-left: 50px;
     padding-right: 50px;
 }
