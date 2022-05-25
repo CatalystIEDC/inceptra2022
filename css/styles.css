@@ -4,6 +4,8 @@ body{
 #title{
     background-color: #8749FA;
     background: url("/images/Desktop.png"); 
+    background-size: cover;
+    background-repeat: no-repeat;
     color: #2C2C2C;
     margin: 0;
     border: 0;
